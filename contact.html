@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Aradhya Foundation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url(''); /* Replace with your background image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .circular-image {
+            width: 200px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 4px solid white; /* Optional border for a polished look */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <header class="bg-white bg-opacity-90 shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold text-blue-600">
+                <a href="index.html">Aradhya Foundation</a>
+            </h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="donate.html" class="text-gray-600 hover:text-blue-600">Donate</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </nav>
+            <button id="menu-toggle" class="md:hidden focus:outline-none text-gray-600 hover:text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden flex flex-col space-y-2 mt-2 hidden bg-gray-100 px-4">
+            <a href="index.html" class="py-2 text-gray-600 hover:text-blue-600">Home</a>
+            <a href="donate.html" class="py-2 text-gray-600 hover:text-blue-600">Donate</a>
+            <a href="about.html" class="py-2 text-gray-600 hover:text-blue-600">About</a>
+            <a href="contact.html" class="py-2 text-gray-600 hover:text-blue-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Contact Information Section -->
+    <section class="container mx-auto py-12 px-4 text-center bg-white bg-opacity-90 rounded-lg shadow-lg mt-10">
+        <h2 class="text-3xl font-bold text-gray-800">Contact Aradhya Foundation</h2>
+        <p class="text-lg text-gray-600 mt-4 max-w-xl mx-auto">
+            Reach out to us for any questions, partnerships, or ways to get involved in our mission. We’re here to help and make a difference together.
+        </p>
+
+        <!-- Owner Information -->
+        <div class="flex flex-col items-center mt-8">
+            <img src="omi.jpg" alt="Hariom Deepak Sonawane" class="circular-image">
+            <h3 class="text-xl font-semibold text-gray-800 mt-4">Hariom Deepak Sonawane</h3>
+            <p class="text-gray-600">Founder of Aradhya Foundation</p>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="mt-6 text-gray-700">
+            <p><strong>Email:</strong> <a href="mailto:thehariomsonwane@gmail.com" class="text-blue-600 hover:underline">thehariomsonwane@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+917744048491" class="text-blue-600 hover:underline">+91 7744048491</a></p>
+        </div>
+
+        <!-- Additional Message -->
+        <p class="mt-8 text-gray-500 max-w-lg mx-auto">
+            Every conversation brings us closer to helping more people. Whether it’s to support our cause, volunteer, or learn more, we’re just a message away. Thank you for your interest in Aradhya Foundation!
+        </p>
+    </section>
+
+    <!-- Tailwind Script for Mobile Menu Toggle -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
